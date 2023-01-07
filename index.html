@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,289 @@
     <link href="./dist/output.css" rel="stylesheet">
     <title>Udin'Ship is Under Constructions</title>
 </head>
+
 <body>
-    <div class="flex h-screen items-center w-full">
-        <div class="default-shadow flex mx-auto flex-col items-center justify-center w-3/4 h-1/2 rounded-lg bg-indigo-500 relative">
+    <nav class="fixed w-full z-10">
+        <div id="landing" class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>About</a></li>
+                  <li><a>Experiences</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>What they said</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-lg">zikrullah@lonie.dev</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>About</a></li>
+                  <li><a>Experiences</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>What they said</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-primary">Contact Me</a>
+            </div>
+          </div>
+    </nav>
+    <main id="landing" class="">
+        <section  class="h-screen relative px-mobile md:px-standard">
+            <div class="flex w-full justify-center" >
+                <div class="mt-20">
+                    <h1 class="font-bold text-[8rem] text-primary text-center">HI!</h1>
+                </div>
+                <img class="absolute bottom-0 object-bottom object-cover" src="./assets/img/charlie-green-3JmfENcL24M-unsplash-removebg-preview.png" alt="me with standard style" >
+                <!-- <div class="relative w-[300px] h-[300px] flex">
+                    <img class="object-top drop-shadow-basic-blue h-full w-full rounded-full object-cover" src="./assets/img/itay-verchik-YmQ8TrsieE4-unsplash.jpg" alt="me with standard style" >
+                    <div class="absolute shadow-sm flex items-center justify-center shadow-black drop-shadow-lg rounded-full bottom-0 right-0 aspect-square h-1/5 bg-[#FF4F23]">
+                        <p class="text-sm text-center text-white">2+ <br> Years</p>
+                    </div>
+                    <div class="absolute drop-shadow-lg rounded-full bottom-8 right-14 aspect-square h-1/4 bg-[#ACEF23]">
+    
+                    </div>
+                </div> -->
+                
+            </div>
+        </section>
+        <section class="h-[40vh] py-4 bg-primary px-mobile md:px-standard">
+            <div>
+                <h2 class="text-neutral font-bold text-[2rem]">Experiences</h2>
+            </div>
+        </section>
+        <section class="h-[20vh] py-4 bg-base px-mobile md:px-standard">
+            <div>
+                <h2 class="text-neutral text-right font-bold text-[2rem]">Last Projects</h2>
+            </div>
+        </section>
+        <section class="py-4 bg-primary px-mobile md:px-standard">
+            <div>
+                <h2 class="text-accent font-bold text-[2rem]">What they said?</h2>
+                <!-- <div class="grid grid-cols-2 md:grid-cols-3">
+                    <div class="card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-accent text-primary shadow-2xl m-4">
+                        <figure>
+                            <img src="https://picsum.photos/id/1005/500/250" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">DaisyUI Card</h2>
+                            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-4 bg-accent px-mobile md:px-standard">
+            <div>
+                <h2 class="text-primary text-right font-bold text-[2rem]">Contact Me</h2>
+                <div class="block md:flex gap-2">
+                    <div class="w-full text-primary text-lg my-4">
+                        <p><span class="md:text-lg md:font-bold">Yeay!</span> <br class="hidden md:block"> Direct communication is possible between us.</p>
+                    </div>
+                    <div class="flex w-full">
+                            <div class="card flex-shrink-0 w-full shadow-2xl bg-base-100">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="3a90be2a-bfa6-4777-9b08-03e26225a18d">
+                                    <div class="card-body">
+                                        <div class="form-control">
+                                            <label class="label">
+                                                <span class="label-text">Email</span>
+                                            </label>
+                                            <input name="email" type="text" placeholder="email" class="input input-primary input-bordered" />
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label">
+                                                <span class="label-text">Name</span>
+                                            </label>
+                                            <input name="name" type="text" placeholder="name" class="input input-primary input-bordered" />
+                                        </div>
+                                        <div class="form-control">
+                                            <label class="label">
+                                                <span class="label-text">Message</span>
+                                            </label>
+                                            <textarea name="message" class="textarea textarea-primary textarea-bordered" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="form-control mt-6">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section>
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content px-mobile md:px-standard max-w-full w-full flex-col lg:flex-row-reverse">
+                    <img src="./assets/img/itay-verchik-YmQ8TrsieE4-unsplash.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div class="w-full">
+                        <h1 class="text-5xl font-bold">Box Office News!</h1>
+                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                       
+
+                        <label for="my-modal-4" class="btn btn-primary">Get Started</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-mobile md:px-standard grid grid-cols-2 md:grid-cols-3 h-screen bg-base-200">
+            <div class="card shadow-2xl m-4">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/500/250" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                </div>
+            </div>
+            <div class="card shadow-2xl m-4">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/500/250" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                </div>
+            </div>
+            <div class="card shadow-2xl m-4">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/500/250" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                </div>
+            </div>
+            <div class="card shadow-2xl m-4">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/500/250" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                </div>
+            </div>
+            <div class="card shadow-2xl m-4">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/500/250" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                </div>
+            </div>
+            <div class="card shadow-2xl m-4">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/500/250" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">DaisyUI Card</h2>
+                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus.</p>
+                </div>
+            </div>
+        </section> -->
+        <!-- <div class="fixed top-3 flex justify-center w-full">
+            <div class="alert alert-success shadow-lg mx-mobile md:m-0 md:w-1/3">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Your purchase has been confirmed!</span>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <!-- <div class="flex h-screen items-center w-full">
+        <div
+            class="default-shadow flex mx-auto flex-col items-center justify-center w-3/4 h-1/2 rounded-lg bg-indigo-500 relative">
             <p class="text-2xl text-white">Sabar yaa</p>
             <p class="text-sm text-white">Nanti kalo udah jadi langsung di post deh</p>
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-transparent"></div>
         </div>
-    </div>
+    </div> -->
+    <!-- The button to open modal -->
+    <!-- <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+    <label for="my-modal-4" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!
+            </p>
+        </label>
+    </label> -->
+
 </body>
+
 </html>
