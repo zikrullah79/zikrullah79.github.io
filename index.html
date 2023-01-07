@@ -18,32 +18,35 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
                 <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>About</a></li>
-                  <li><a>Experiences</a></li>
-                  <li><a>Projects</a></li>
-                  <li><a>What they said</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experiences">Experiences</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#recommendations">What they said</a></li>
                 </ul>
               </div>
               <a class="btn btn-ghost normal-case text-lg">zikrullah@lonie.dev</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>About</a></li>
-                  <li><a>Experiences</a></li>
-                  <li><a>Projects</a></li>
-                  <li><a>What they said</a></li>
+                <li><a href="#about">About</a></li>
+                  <li><a href="#experiences">Experiences</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#recommendations">What they said</a></li>
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn btn-primary">Contact Me</a>
+              <a href="#contact" class="btn btn-primary">Contact Me</a>
             </div>
           </div>
     </nav>
     <main id="landing" class="">
-        <section  class="h-screen relative px-mobile md:px-standard">
+        <section id="about" class="h-screen relative px-mobile md:px-standard">
             <div class="flex w-full justify-center" >
-                <div class="mt-20">
-                    <h1 class="font-bold text-[8rem] text-primary text-center">HI!</h1>
+                <div class="mt-20 relative ">
+                    <h1 class="font-bold leading-[1] text-[8rem] text-primary text-center">HI!</h1>
+                    <h1 class="font-bold leading-3 text-[1rem] text-primary">I am</h1>
+                    <h1 class="font-bold leading-[1] text-accent text-[3rem] text-center">Zikrullah Aliwainda</h1>
+                    <h1 class="font-bold text-[1rem] text-right text-primary">a Software Engineer</h1>
                 </div>
                 <img class="absolute bottom-0 object-bottom object-cover" src="./assets/img/charlie-green-3JmfENcL24M-unsplash-removebg-preview.png" alt="me with standard style" >
                 <!-- <div class="relative w-[300px] h-[300px] flex">
@@ -58,17 +61,17 @@
                 
             </div>
         </section>
-        <section class="h-[40vh] py-4 bg-primary px-mobile md:px-standard">
+        <section id="experiences" class="h-[40vh] py-4 bg-primary px-mobile md:px-standard">
             <div>
                 <h2 class="text-neutral font-bold text-[2rem]">Experiences</h2>
             </div>
         </section>
-        <section class="h-[20vh] py-4 bg-base px-mobile md:px-standard">
+        <section id="projects" class="h-[20vh] py-4 bg-base px-mobile md:px-standard">
             <div>
                 <h2 class="text-neutral text-right font-bold text-[2rem]">Last Projects</h2>
             </div>
         </section>
-        <section class="py-4 bg-primary px-mobile md:px-standard">
+        <section id="recommendations" class="py-4 bg-primary px-mobile md:px-standard">
             <div>
                 <h2 class="text-accent font-bold text-[2rem]">What they said?</h2>
                 <!-- <div class="grid grid-cols-2 md:grid-cols-3">
@@ -110,7 +113,7 @@
                     </div>
                 </div> -->
                 <div class="carousel w-full">
-                    <div id="slide1" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-accent text-primary shadow-2xl m-4">
+                    <div id="slide1" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent shadow-2xl m-4">
                         <figure>
                             <img src="https://picsum.photos/id/1005/500/250" />
                         </figure>
@@ -149,7 +152,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-4 bg-accent px-mobile md:px-standard">
+        <section id="contact" class="py-4 bg-accent px-mobile md:px-standard">
             <div>
                 <h2 class="text-primary text-right font-bold text-[2rem]">Contact Me</h2>
                 <div class="block md:flex gap-2">
@@ -157,7 +160,7 @@
                         <p><span class="md:text-lg md:font-bold">Yeay!</span> <br class="hidden md:block"> Direct communication is possible between us.</p>
                     </div>
                     <div class="flex w-full">
-                            <div class="card flex-shrink-0 w-full shadow-2xl bg-base-100">
+                            <div id="landing" class="card flex-shrink-0 w-full shadow-2xl bg-base-100">
                                 <form action="https://api.web3forms.com/submit" method="POST">
                                     <input type="hidden" name="access_key" value="3a90be2a-bfa6-4777-9b08-03e26225a18d">
                                     <div class="card-body">
@@ -165,19 +168,19 @@
                                             <label class="label">
                                                 <span class="label-text">Email</span>
                                             </label>
-                                            <input name="email" type="text" placeholder="email" class="input input-primary input-bordered" />
+                                            <input name="email" type="text" placeholder="udin@gmail.com" class="input input-primary input-bordered" />
                                         </div>
                                         <div class="form-control">
                                             <label class="label">
                                                 <span class="label-text">Name</span>
                                             </label>
-                                            <input name="name" type="text" placeholder="name" class="input input-primary input-bordered" />
+                                            <input name="name" type="text" placeholder="udin surodin" class="input input-primary input-bordered" />
                                         </div>
                                         <div class="form-control">
                                             <label class="label">
                                                 <span class="label-text">Message</span>
                                             </label>
-                                            <textarea name="message" class="textarea textarea-primary textarea-bordered" placeholder="Message"></textarea>
+                                            <textarea name="message" class="textarea textarea-primary textarea-bordered" placeholder="Type something ..."></textarea>
                                         </div>
                                         <div class="form-control mt-6">
                                             <button type="submit" class="btn btn-primary">Submit</button>
