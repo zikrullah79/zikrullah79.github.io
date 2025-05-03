@@ -1,7 +1,132 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@import "tailwindcss";
+/* @theme{
+    --spacing-standard:100px;
+    --spacing-mobile:20px;
+    --drop-shadow-basic-blue:0 35px 35px rgba(91, 192, 248, 0.45):
+} */
+/* @plugin "daisyui" {
+  themes:  bumblebee --default;
+} */
+/* #services{
+  background-color: #e5e5f7;
+opacity: 0.8;
+background: repeating-linear-gradient( -14deg, var(--color-red-800), var(--color-red-800) 100px, #FFFFFF 100px, #FFFFFF 460px );
+} */
+
+.services-card{
+  padding: 2em;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  background-color: #f8f1e7;
+  opacity: 0.8;
+  cursor: pointer;
+  transition:0.3s;
+
+  span{
+    transition: 0.3s;
+  }
+}
+.services-card:hover{
+  span{
+    transform: rotate(-45deg);
+  }
+
+  #line{
+    background-color: white;
+  }
+
+  transform: scale(1.2);
+  z-index: 10;
+  color: white;
+  background-color: var(--color-red-800);
+}
+.image-hero{
+  background-size: contain;
+}
+@media (width >= 48rem) {
+  .image-hero{
+    background-size: 720px;background-position-x: 20%;
+  }
+}
+.base-text{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 1em;
+  gap: 2px;
+}
+.btn:hover{
+  background-color: var(--color-red-800);
+  cursor: pointer;
+  color:white;
+}
+/* Scroll animations */
+/* Scroll animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .scroll-animate.fade-right {
+    transform: translateX(50px);
+  }
+  
+  .scroll-animate.fade-left {
+    transform: translateX(-50px);
+  }
+  
+  .scroll-animate.scale-up {
+    transform: scale(0.9);
+  }
+  
+  /* Floating animation for hero image */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Slide up animation */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 
 .default-shadow{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;

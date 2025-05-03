@@ -1,290 +1,556 @@
 <!DOCTYPE html>
-<html  lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <title>Udin'Ship is Under Constructions</title>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  </head>
+  <body class="base-text max-w-[1920px]" style="margin: 0 auto;">
+    <!-- <nav class="md:text-[1rem] text-[0.8rem] px-[20px] md:px-[80px] text-red-800 z-10 fixed w-full bg-transparent flex justify-between">
+      <div class="flex">
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#experiences">Experiences</a>
+        <a class="btn" href="#works">Works</a>
+        <a class="btn" href="#services">Services</a>
+      </div>
+      <div>
+        <a class="btn" href="#hitme">Hit me up 
+          <span class="material-symbols-outlined">
+            call_made
+          </span>
+        </a>
+      </div>
 
-<body>
-    <nav class="fixed w-full z-10">
-        <div id="landing" class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#experiences">Experiences</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#recommendations">What they said</a></li>
-                </ul>
+    </nav> -->
+
+    <div id="home" class="h-[100vh] max-h-[1080px] bg-[url(/assets/img/me-greyscale.png)] px-3 bg-bottom relative  bg-no-repeat image-hero" >
+
+      <div class="flex h-full flex-col items-center justify-center gap-[1rem] text-red-800 font-bold absolute left-4 md:left-[60px]"> 
+        <p style="writing-mode: tb;">Software Engineer</p>
+        <div class="bg-gray-400 h-1/2 w-[2px]"></div>
+      </div>
+
+      <div class="absolute right-0 h-1/2 w-full md:w-auto text-end md:h-full flex flex-col gap-2 justify-center top-0 px-[20px] py-[80px] md:p-[80px]">
+        <h1 class="text-6xl font-medium text-red-800">Greetings</h1>
+        <p>I am Zik - Your Innovative Software Engineer</p>
+
+        <div class="absolute bottom-2 items-center w-full right-0 flex flex-col animate-bounce" >
+          <p>Scroll Down</p>
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span>
+        </div>
+      </div>
+
+      
+    </div>
+    <div id="about" class="h-auto md:h-[100vh] md:max-h-[1080px] relative p-[20px] md:p-[80px] bg-[#f8f1e7]">
+      <div class="flex gap-[1rem] items-center justify-start mb-4">
+        <p class="text-red-800 text-2xl font-medium z-[1]">ABOUT</p>
+        <div class="h-[2px] bg-red-800 w-3/4 z-[1]"></div>
+      </div>
+
+      <div class="w-full h-full">
+
+        <div class="w-full text-sm md:text-lg md:w-3/4 flex flex-col gap-[2em] h-full md:pr-[30px]">
+          <p class="text-justify text-wrap">With a proven track record across Indonesia, Singapore, and the United States, I bring a wealth of international experience delivering impactful software solutions. Trusted to lead and complete diverse projects spanning social media platforms, ERP systems, supply chain management, banking software, content management systems, and job portals, I thrive in dynamic environments that demand adaptability and technical excellence.My technical toolkit is broad and deep, encompassing multiple programming languages such as Golang, JavaScript, Python, Ruby, and PHP. I am proficient in a variety of modern frameworks including Rails, Go Fiber, Go Gin, Go Echo, Laravel, Django, Next.js, and Angular, enabling me to craft scalable, maintainable, and high-performance applications tailored to business needs.Beyond coding, I am well-versed in essential development workflows and tools like Git, Docker, and CI/CD pipelines (GitHub Actions, Jenkins, GitLab CI), ensuring smooth, automated, and reliable software delivery. My experience working within Agile Scrum teams sharpens my ability to collaborate effectively, prioritize tasks, and deliver value continuously.I am passionate about leveraging technology to solve complex problems and drive business growth, always eager to embrace new challenges and innovations in the software development landscape.</p>
+          
+          
+
+         <div class="flex flex-col gap-2">
+            <div class="flex gap-4 items-center">
+              <div class="md:hidden">
+                <div class=" rounded-full w-[10px] h-[10px] bg-red-800">
+
+                </div>
               </div>
-              <a class="btn btn-ghost normal-case text-lg">zikrullah@lonie.dev</a>
+              <p><b>Full-Stack Development Mastery</b>: Skilled in a broad spectrum of programming languages and frameworks, enabling me to build scalable and maintainable applications tailored to diverse business needs</p>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a href="#about">About</a></li>
-                  <li><a href="#experiences">Experiences</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#recommendations">What they said</a></li>
-              </ul>
+            <div class="flex gap-3 items-center">
+              <div class=" md:hidden">
+                <div class=" rounded-full w-[10px] h-[10px] bg-red-800">
+
+                </div>
+              </div>
+              <p><b>DevOps & Agile Expertise</b>: Proficient in Git, Docker, and CI/CD pipelines, combined with hands-on experience in Agile Scrum methodologies to streamline development and deployment processes.</p>
             </div>
-            <div class="navbar-end">
-              <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <div class="flex gap-3 items-center">
+              <div class="md:hidden">
+                <div class=" rounded-full w-[10px] h-[10px] bg-red-800">
+
+                </div>
+              </div>
+              <p><b>Global Project Experience</b>: Proven ability to adapt and deliver in multicultural environments across Indonesia, Singapore, and the United States, managing complex projects in various industries with a focus on quality and innovation.</p>
+            </div>
+         </div>
+         
+       </div>
+
+        
+        </div>
+        <div class="hidden md:block h-full w-1/4 absolute top-0 right-[3em] bg-cover bg-white bg-[url(/assets/img/CV3.png)]">
+          <!-- <img src="./assets/img/me.png" class="" alt=""> -->
+        </div>
+      </div>
+    </div>
+    <div id="experiences" class=" min-h-[1080px] p-[20px] md:p-[80px]">
+      <div class="flex gap-[1rem] items-center justify-end">
+        <div class="h-[2px] bg-red-800 w-3/4"></div>
+        <p class="text-red-800 text-2xl font-medium">Experiences</p>
+      </div>
+      <div class=" w-full gap-[2em]">
+        <div class="my-4 flex flex-col md:flex-row justify-between">
+          <div class="md:w-1/3">
+            <h1 class="text-[3rem]">Dive Into My Career Story!</h1>
+          </div>
+          <div class="md:w-1/2">
+            <p>Vivamus lacinia lacus vel neque egestas, vitae volutpat purus dapibus. Nullam nec ultricies erat. Etiam ac urna metus. Sed cursus libero id ullamcorper interdum. Donec non urna et erat vehicula porttitor. Vivamus a sagittis dolor. Nulla facilisi. Cras euismod orci at felis cursus, vel vulputate sapien suscipit.</p>
+            <div class="p-2 hover:bg-gray-200 hover:text-black cursor-pointer mt-1 w-1/3 md:w-1/6 flex justify-center items-center rounded-full bg-red-800 text-white">
+              <a href="#hitme">Hit me!</a>
             </div>
           </div>
-    </nav>
-    <main id="landing" class="">
-        <section id="about" class="h-screen relative px-mobile md:px-standard">
-            <div class="flex w-full justify-center" >
-                <div class="mt-20 relative ">
-                    <h1 class="font-bold leading-[1] text-[8rem] text-primary text-center">HI!</h1>
-                    <h1 class="font-bold leading-3 text-[1rem] text-primary">I am</h1>
-                    <h1 class="font-bold leading-[1] text-accent text-[3rem] text-center">Zikrullah Aliwainda</h1>
-                    <h1 class="font-bold text-[1rem] text-right text-primary">a Software Engineer</h1>
-                </div>
-                <img class="absolute bottom-0 object-bottom object-cover" src="./assets/img/charlie-green-3JmfENcL24M-unsplash-removebg-preview.png" alt="me with standard style" >
-                <a class="absolute text-sm bottom-0 text-white" href="https://unsplash.com/photos/3JmfENcL24M?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Dummy Image from Unsplash.</a>
-                <!-- <div class="relative w-[300px] h-[300px] flex">
-                    <img class="object-top drop-shadow-basic-blue h-full w-full rounded-full object-cover" src="./assets/img/itay-verchik-YmQ8TrsieE4-unsplash.jpg" alt="me with standard style" >
-                    <div class="absolute shadow-sm flex items-center justify-center shadow-black drop-shadow-lg rounded-full bottom-0 right-0 aspect-square h-1/5 bg-[#FF4F23]">
-                        <p class="text-sm text-center text-white">2+ <br> Years</p>
-                    </div>
-                    <div class="absolute drop-shadow-lg rounded-full bottom-8 right-14 aspect-square h-1/4 bg-[#ACEF23]">
-    
-                    </div>
-                </div> -->
-                
-            </div>
-        </section>
-        <section id="experiences" class="py-4 bg-primary px-mobile md:px-standard">
-            <div>
-                <h2 class="text-neutral font-bold text-[2rem]">Experiences</h2>
-            </div>
-            <div class="w-full relative flex items-center justify-center">
-                <div class="w-full h-full grid">
-                    <div class="h-24 p-2 text-right">
-                        <h3>2014-2016</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="h-24 p-2">
-                    </div>
-                    <div class="h-24 p-2 text-right">
-                        <h3>2014-2016</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="h-24 p-2">
-                    </div>
-                    <div class="h-24 p-2 text-right">
-                        <h3>2014-2016</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="w-2 rounded-md h-[500px] bg-accent">
-                </div>
-                <div class="w-full">
-                    <div class="w-full h-full grid">
-                        <div class="h-24 p-2">
-                        </div>
-                        <div class="h-24 p-2">
-                            <h3>2014-2016</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="h-24 p-2">
-                        </div>
-                        <div class="h-24 p-2">
-                            <h3>2014-2016</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="h-24 p-2">
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute flex flex-col justify-between h-full gap-2">
-                    <div class="rounded-full w-6 aspect-square bg-primary border-4 border-accent">
-
-                    </div>
-                    <div class="rounded-full w-6 aspect-square bg-primary border-4 border-accent">
-
-                    </div>
-                    <div class="rounded-full w-6 aspect-square bg-primary border-4 border-accent">
-
-                    </div>
-                    <div class="rounded-full w-6 aspect-square bg-primary border-4 border-accent">
-
-                    </div>
-                    <div class="rounded-full w-6 aspect-square bg-primary border-4 border-accent">
-
-                    </div>
-                    <div class="rounded-full w-6 aspect-square bg-primary border-4 border-accent">
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="projects" class="py-4 bg-base px-mobile md:px-standard">
-            <div>
-                <h2 class="text-neutral text-right font-bold text-[2rem]">Last Projects</h2>
-                <div class="carousel gap-2 w-full">
-                    <div id="slide1" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <figure>
-                            <img src="https://picsum.photos/id/1005/500/250" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Project 0</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div id="slide2" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <figure>
-                            <img src="https://picsum.photos/id/1005/500/250" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Project 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div id="slide3" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <figure>
-                            <img src="https://picsum.photos/id/1005/500/250" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Project 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div id="slide4" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <figure>
-                            <img src="https://picsum.photos/id/1005/500/250" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Project 3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="recommendations" class="py-4 bg-primary px-mobile md:px-standard">
-            <div>
-                <h2 class="text-accent font-bold text-[2rem]">What they said?</h2>
-                <div class="carousel gap-2 w-full">
-                    <div id="slide1" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <div class="card w-full bg-base-100 shadow-lg">
-                            <div class="card-body">
-                              <h2 class="card-title">Udin Surodin</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              <div class="card-actions justify-end">
-                                <!-- <button class="btn btn-primary">Buy Now</button> -->
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div id="slide2" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <div class="card w-full bg-base-100 shadow-lg">
-                            <div class="card-body">
-                              <h2 class="card-title">Asep Sutisna</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              <div class="card-actions justify-end">
-                                <!-- <button class="btn btn-primary">Buy Now</button> -->
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div id="slide3" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <div class="card w-full bg-base-100 shadow-lg">
-                            <div class="card-body">
-                              <h2 class="card-title">Jamaluddin Kamal</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              <div class="card-actions justify-end">
-                                <!-- <button class="btn btn-primary">Buy Now</button> -->
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div id="slide4" class="carousel-item relative w-full md:w-1/2 lg:w-1/3 card bg-base-200 text-accent">
-                        <div class="card w-full bg-base-100 shadow-lg">
-                            <div class="card-body">
-                              <h2 class="card-title">Syarif Syaifuddin</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              <div class="card-actions justify-end">
-                                <!-- <button class="btn btn-primary">Buy Now</button> -->
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <section id="contact" class="py-4 bg-accent px-mobile md:px-standard">
-            <div>
-                <h2 class="text-primary text-right font-bold text-[2rem]">Contact Me</h2>
-                <div class="block md:flex gap-2">
-                    <div class="w-full text-primary text-lg my-4">
-                        <p><span class="md:text-lg md:font-bold">Yeay!</span> <br class="hidden md:block"> Direct communication is possible between us.</p>
-                    </div>
-                    <div class="flex w-full">
-                            <div id="landing" class="card flex-shrink-0 w-full shadow-2xl bg-base-100">
-                                <form action="https://api.web3forms.com/submit" method="POST">
-                                    <input type="hidden" name="access_key" value="3a90be2a-bfa6-4777-9b08-03e26225a18d">
-                                    <div class="card-body">
-                                        <div class="form-control">
-                                            <label class="label">
-                                                <span class="label-text">Email</span>
-                                            </label>
-                                            <input required name="email" type="text" placeholder="udin@gmail.com" class="input input-primary input-bordered" />
-                                        </div>
-                                        <div class="form-control">
-                                            <label class="label">
-                                                <span class="label-text">Name</span>
-                                            </label>
-                                            <input required name="name" type="text" placeholder="udin surodin" class="input input-primary input-bordered" />
-                                        </div>
-                                        <div class="form-control">
-                                            <label class="label">
-                                                <span class="label-text">Message</span>
-                                            </label>
-                                            <textarea required name="message" class="textarea textarea-primary textarea-bordered" placeholder="Type something ..."></textarea>
-                                        </div>
-                                        <!-- <div class="g-recaptcha" data-sitekey="6LdNmOEjAAAAAHkovh_JtEixAS9s2R6k2XOrHGFm" id="x1"></div> -->
-                                        <div class="form-control mt-6">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       
-    </main>
-    <!-- <div class="flex h-screen items-center w-full">
-        <div
-            class="default-shadow flex mx-auto flex-col items-center justify-center w-3/4 h-1/2 rounded-lg bg-indigo-500 relative">
-            <p class="text-2xl text-white">Sabar yaa</p>
-            <p class="text-sm text-white">Nanti kalo udah jadi langsung di post deh</p>
-            <div class="absolute top-0 bottom-0 left-0 right-0 bg-transparent"></div>
         </div>
+        <div class="grid grid-flow-row md:divide-y-2 grid-cols-1 md:grid-cols-3 ">
+          <div class="col-span-2 py-[1em] md:py-[3em]">
+            <p>Apr 2023 - Present</p>
+            <h2 class="text-2xl font-medium">PT. Solusi Pembayaran Elektronik - Indonesia</h2>
+          </div>
+          <div class="flex border-b-2  py-[1em] md:py-[3em] md:justify-end text-red-800 gap-2 flex-wrap">
+            <div class="w-full md:text-end font-medium">
+              <p class="text-2xl">Software Engineer</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">PHP</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Fiber</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Golang</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Laravel</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Yii</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">GRPC</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-span-2 py-[1em] md:py-[3em]">
+            <p>Oct 2022 - Nov 2022</p>
+            <h2 class="text-2xl font-medium">Forest Technologies - Singapore</h2>
+          </div>
+          <div class="flex border-b-2  py-[1em] md:py-[3em] md:justify-end text-red-800 gap-2 flex-wrap">
+            <div class="w-full md:text-end font-medium">
+              <p class="text-2xl">Tech Lead</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">GRPC</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Angular</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Golang</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">MongoDB</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Docker</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">GCP</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-span-2 py-[1em] md:py-[3em]">
+            <p>Jan 2022 - Sep 2022</p>
+            <h2 class="text-2xl font-medium">Forest Technologies - Singapore</h2>
+          </div>
+          <div class="flex border-b-2  py-[1em] md:py-[3em] md:justify-end text-red-800 gap-2 flex-wrap">
+            <div class="w-full md:text-end font-medium">
+              <p class="text-2xl">Software Engineer</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Javascript</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">GRPC</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Golang</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Angular</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">MongoDB</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-span-2 py-[1em] md:py-[3em] border-0">
+            <p>Feb 2020 - Feb 2021</p>
+            <h2 class="text-2xl font-medium">Cendekia Muda Digimedia - Indonesia</h2>
+          </div>
+          <div class="flex border-b-2 md:border-0 py-[1em] md:py-[3em] md:justify-end text-red-800 gap-2 flex-wrap">
+            <div class="w-full md:text-end font-medium">
+              <p class="text-2xl">Backend Developer</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Golang</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">Echo</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">GORM</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">HTML</p>
+            </div>
+            <div class="rounded-full w-1/4 h-fit gap-2 flex justify-center items-center p-1 border-2 border-red-800">
+              <div class="rounded-full w-[10px] h-[10px] bg-red-800"></div>
+              <p class="text-sm">CSS</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="text-center text-[4rem]">
+          50+ <br>
+          <span class="text-sm">Projects</span>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- <div id="works" class="p-[80px]  bg-[#f8f1e7]">
+      <div class="flex gap-[1rem] items-center mb-4 justify-end">
+        <div class="h-[2px] bg-red-800 w-3/4"></div>
+        <p class="text-red-800 text-2xl font-medium">Works</p>
+      </div>
+
+      <div class="flex gap-2">
+        <div class="w-1/2 relative">
+          <div class="sticky top-[35%] pr-3 text-justify">
+            <h1 class="text-3xl text-red-800 font-medium">Peek Into My Recent Projects</h1>
+            <p>I’ve been busy building some cool stuff on the web—from snappy frontends to solid backends. If you’re into clean code, smooth user experiences, and apps that just work, you’re in the right spot. Scroll down and take a look at what I’ve been cooking up lately!</p>
+
+          </div>
+        </div>
+        <div class="w-1/2" >
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center">
+            <div>
+              <h2>Lonurl</h2>
+              <p>Phasellus ac eros at urna condimentum lacinia. </p>
+            </div>
+            <div>
+              <img
+                  src="https://placehold.co/100x100"
+                  alt="Social Media Dashboard"
+                  class="hidden md:block overflow-hidden aspect-square"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
     </div> -->
-    <!-- The button to open modal -->
-    <!-- <input type="checkbox" id="my-modal-4" class="modal-toggle" />
-    <label for="my-modal-4" class="modal cursor-pointer">
-        <label class="modal-box relative" for="">
-            <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
-            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!
-            </p>
-        </label>
-    </label> -->
 
-</body>
+    <div id="services" class="md:h-[100vh] md:max-h-[1080px] p-[20px] md:p-[80px]">
+      <!-- <div class="flex gap-[1rem] items-center mb-4 justify-end">
+        <div class="h-[2px] bg-red-800 w-3/4"></div>
+        <p class="text-red-800 text-2xl font-medium">Services</p>
+      </div> -->
+      <div class="flex items-center justify-center w-full h-full p-2">
+        <div class="w-full h-auto m-auto grid grid-flow-row grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-4">
+          <div class="row-span-2 mb-4 col-span-2 md:my-auto lg:w-2/3 text-start">
+            <h1 class="text-3xl text-red-800 font-medium">What I Can Help You With</h1>
+            <p>Need a hand bringing your web ideas to life or cleaning up some messy code? Here’s what I do best:</p>
 
+          </div>
+          
+          <div class="services-card col-span-2 lg:col-span-1 rounded-2xl">
+            <div class="flex items-center justify-between">
+              <div id="line" class="w-1/3 h-[2px] bg-red-800 mb-2"></div>
+              <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+            </div>
+            <h2 class="text-lg lg:text-2xl font-medium">Website Development</h2>
+            <p>Building modern, responsive, and user-friendly websites that look great and work even better.</p>
+          </div>
+          <div class="services-card col-span-2 lg:col-span-1 rounded-2xl">
+            <div class="flex items-center justify-between">
+              <div id="line" class="w-1/3 h-[2px] bg-red-800 mb-2"></div>
+              <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+            </div>
+            <h2 class="text-lg lg:text-2xl font-medium">Database Schema Design</h2>
+            <p>Structuring data the smart way to keep your app scalable, maintainable, and fast.</p>
+          </div>
+          <div class="services-card col-span-2 lg:col-span-1 rounded-2xl">
+            <div class="flex items-center justify-between">
+              <div id="line" class="w-1/3 h-[2px] bg-red-800 mb-2"></div>
+              <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+            </div>
+            <h2 class="text-lg lg:text-2xl font-medium">Bug Tracing & Fixing</h2>
+            <p>Hunting down bugs and squashing them so your users stay happy and your app stays healthy.</p>
+          </div>
+          <div class="services-card col-span-2 lg:col-span-1 rounded-2xl">
+            <div class="flex items-center justify-between">
+              <div id="line" class="w-1/3 h-[2px] bg-red-800 mb-2"></div>
+              <span class="material-symbols-outlined">
+                arrow_forward
+                </span>
+            </div>
+            <h2 class="text-lg lg:text-2xl font-medium">Code Quality Improvement</h2>
+            <p>Making your app run smoother, faster, and more efficiently—because speed matters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonials" class=" p-[20px] md:p-[80px]  flex items-center justify-center">
+      <div class="flex w-full md:w-3/4 max-w-[850px]">
+        <div class="m-auto">
+          <div id="prev_test" class="flex items-center justify-center cursor-pointer bg-red-800 text-white rounded-full hover:bg-gray-200">
+            <span class="material-symbols-outlined">
+              chevron_left
+              </span>
+          </div>
+        </div>
+        <div class="w-full min-h-[300px] mx-4 px-3 text-center flex flex-col justify-center">
+          <p class="text-6xl text-red-800">❝</p>
+          <div id="testimonyBox" class="w-full text-sm md:text-md">
+            <p id="title_desc">You must have come across someone who has quite a distinctive way of expressing themselves, but is highly trustworthy when it comes to projects. Zikrullah is probably one of such people. He uses several unusual yet logical communication techniques. However, if you inquire about the work assigned to him, you won't need to be concerned because he will put out his best effort in that task, despite how challenging it may be for him. Zikrullah, it was a joy working with you.</p>
+            <div class="flex gap-4 mt-[2em] items-center justify-center">
+              <img
+              id="photo_test"
+              src="https://media.licdn.com/dms/image/v2/D5603AQHTiXCxx4BO9A/profile-displayphoto-shrink_100_100/B56ZWIUpCvGQAY-/0/1741748868755?e=1751500800&v=beta&t=ZmKgHVLukBWq2C3awe_3ti1G1vhtt88pwX-fd4KprmY"
+              alt="Social Media Dashboard"
+              class="overflow-hidden h-[50px] aspect-square rounded-full"
+              />
+              <div>
+                <p id="name_test" class="text-start text-red-800 font-light">Ali Abdul Wahid</p>
+                <p class="text-start" id="title_test">Top 3% Angular Developers Upwork</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-auto">
+          <div id="next_test" class="flex items-center justify-center cursor-pointer bg-red-800 text-white rounded-full hover:bg-gray-200">
+            <span class="material-symbols-outlined">
+              chevron_right
+              </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer id="hitme" class="" >
+      
+      <div class="flex relative max-h-[600px] h-[40vh] bg-[#ded7cf] px-[20px] md:px-[80px] items-center justify-center">
+        <div class="w-3/4 md:3/4 lg:w-1/2 text-red-800 text-center">
+          <div class="flex justify-center items-center "> 
+            <div class="mb-4 rounded-full flex items-center justify-center border-2 border-red-800 p-[0.5rem] w-[6.5rem]">
+              <span class="material-symbols-outlined " style="font-size: 5rem;">
+                lightbulb
+                </span>
+            </div>
+          </div>
+          <h1 class="md:text-2xl lg:text-4xl mb-2 font-medium">Now you know about me, let's talk about you.</h1>
+          <p class="text-sm md:text-lg">
+            Spill the beans on your plans, dream projects, and what lights your fire! I’m all ears and ready to dive in. Let’s turn those awesome ideas into something real and amazing together!
+            <!-- I would love to hear all about your vision—your plans, your dream projects, and the sources of inspiration that drive you. Share with me the ideas and aspirations that ignite your passion, and together, we will work hand in hand to transform those dreams into tangible realities. No matter how ambitious or complex, we will navigate every step of the journey to bring your vision to life. -->
+
+          </p>
+        </div>
+        <div class="flex h-full flex-col gap-[1rem] items-center justify-end text-red-800 font-bold absolute right-2 md:right-[60px]"> 
+          <a href="#home" style="writing-mode: tb;">
+            <span class="material-symbols-outlined">
+              arrow_back
+              </span>
+              Scroll to top 
+            </a>
+          <div class="bg-red-800 h-1/2 w-[2px]"></div>
+        </div>
+      </div>
+      <div class="flex bg-red-800 text-[0.5rem] md:text-[1rem] px-[20px] md:px-[80px]  py-4 text-white justify-between">
+        <div class="">
+          <a href="mailto:zikrullahaliwainda@gmail.com"> zikrullahaliwainda@gmail.com</a>
+        </div>
+        <div class="flex gap-2">
+          <a href="https://www.linkedin.com/in/zikrullahali/" target="_blank">LinkedIn</a>/
+          <a href="https://github.com/zikrullah79" target="_blank">Github</a>/
+          <a href="https://wa.me/085255436300" target="_blank">Whatsapp</a>/
+          <a href="https://www.upwork.com/freelancers/~013bec4fd940f1acb9" target="_blank">Upwork</a>
+        </div>
+      </div>
+    </footer>
+
+   
+
+    <script src="./script/animation.js"></script>
+  </body>
 </html>
