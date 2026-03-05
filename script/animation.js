@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
   testimonials = [
     {
-      photo : "https://media.licdn.com/dms/image/v2/D5603AQHTiXCxx4BO9A/profile-displayphoto-shrink_100_100/B56ZWIUpCvGQAY-/0/1741748868755?e=1751500800&v=beta&t=ZmKgHVLukBWq2C3awe_3ti1G1vhtt88pwX-fd4KprmY",
+      photo : "https://avatars.githubusercontent.com/u/58108579?v=4",
       name : "Ali Abdul Wahid",
       title:"Top 3% Angular Developers Upwork",
       testimony : "You must have come across someone who has quite a distinctive way of expressing themselves, but is highly trustworthy when it comes to projects. Zikrullah is probably one of such people. He uses several unusual yet logical communication techniques. However, if you inquire about the work assigned to him, you won't need to be concerned because he will put out his best effort in that task, despite how challenging it may be for him. Zikrullah, it was a joy working with you."
+    },
+    {
+      photo : "https://miro.medium.com/v2/resize:fit:2400/2*DEWfgNABYIlA261P9PSpmg.jpeg",
+      name : "Shafira Ishlah Nurulita",
+      title:"Managing Director at Forest Technologies",
+      testimony : "I confidently endorse Zik for the roles of software engineer and project manager. Zik's outstanding communication abilities and inclination towards collaboration make working with him truly enjoyable. He exhibits a strong eagerness to learn and demonstrates great responsibility in completing tasks, consistently delivering top-notch software within designated timelines. Zik's exceptional talent for providing constructive feedback to team members contributes significantly to their growth and development. Moreover, his pleasant and laid-back demeanor contributes to a positive work atmosphere. All in all, Zik is an exceptionally skilled and dependable professional, combining technical expertise with a positive mindset, and would be a valuable asset to any team."
     },
     {
       photo : "https://media.licdn.com/dms/image/v2/D5603AQGts1lAaMbORw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1677941087173?e=1751500800&v=beta&t=wYSCX8ib72B0Ze5SfviFwFdBMYKR1Phdv1jZi5psNvo",
       name : "Imam Muttaqin",
       title:"Backend Developer at SALT",
       testimony : "Zikrullah is a great person to work with. He has demonstrated a strong work ethic and an unwavering commitment to the success of our team. He also can manage when is the time to regroup as colleague at work, and when is the time to chat as a friend to hangout with. In addition, Zikrullah is always willing to go the extra mile to help colleagues and support the organization. Nice to have experienced your company, Zik"
-    },
-    {
-      photo : "https://media.licdn.com/dms/image/v2/D5603AQG-HWBLF1zvow/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729183688006?e=1751500800&v=beta&t=6t_lGnwAMHTw6U1nzTmEnkH4Nw4orFaiJqOstb2EHmY",
-      name : "Shafira Ishlah Nurulita",
-      title:"Managing Director at Forest Technologies",
-      testimony : "I confidently endorse Zik for the roles of software engineer and project manager. Zik's outstanding communication abilities and inclination towards collaboration make working with him truly enjoyable. He exhibits a strong eagerness to learn and demonstrates great responsibility in completing tasks, consistently delivering top-notch software within designated timelines. Zik's exceptional talent for providing constructive feedback to team members contributes significantly to their growth and development. Moreover, his pleasant and laid-back demeanor contributes to a positive work atmosphere. All in all, Zik is an exceptionally skilled and dependable professional, combining technical expertise with a positive mindset, and would be a valuable asset to any team."
     },
     {
       photo : "https://media.licdn.com/dms/image/v2/C5103AQHWDUV6f0p5DA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1531058001092?e=1751500800&v=beta&t=xgnvD2RDOEJF2FZcwhxKitTqRuLqtoafeXzM__JZnsI",
