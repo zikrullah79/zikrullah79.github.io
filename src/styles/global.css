@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #0f172a; /* slate-900 */
+  --color-dark-card: #1e293b; /* slate-800 */
+  --color-glow-red: #ef4444; /* red-500 */
+  --color-accent-red: #e11d48; /* rose-600 */
+  
+  --font-inter: "Inter", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #f8fafc; /* slate-50 */
+}

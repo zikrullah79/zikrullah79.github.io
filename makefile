@@ -1,2 +1,7 @@
-run:
-	npx @tailwindcss/cli -i ./css/main.css -o ./dist/output.css --watch
+.PHONY: build deploy
+
+build:
+	npm run build
+
+deploy: build
+	npx gh-pages -d dist -t 

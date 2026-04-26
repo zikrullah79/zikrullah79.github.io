@@ -1,0 +1,66 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const blogs = await getCollection('blogs');
+  return blogs.map((blog) => ({
+    params: { id: blog.id },
+    props: { blog },
+  }));
+}
+
+const { blog } = Astro.props;
+const { Content } = await render(blog);
+---
+
+<Layout title={`${blog.data.title} - Zikrullah`} hideFooter={true}>
+  <div class="bg-dark-bg min-h-screen py-32 px-6 md:px-12 lg:px-24 border-t border-white/5 relative">
+    
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-accent-red/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <div class="max-w-3xl mx-auto relative z-10">
+      <a href="/blogs" class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-10 font-medium group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Blogs
+      </a>
+      
+      <header class="mb-12 border-b border-white/10 pb-8">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-outfit font-bold text-white mb-6 tracking-tight leading-tight">{blog.data.title}</h1>
+        <div class="flex flex-wrap items-center gap-4 text-slate-400 text-sm">
+          <span class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            {new Date(blog.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </span>
+          {blog.data.author && (
+            <span class="flex items-center gap-2 border-l border-white/10 pl-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              {blog.data.author}
+            </span>
+          )}
+        </div>
+      </header>
+
+      <article class="prose prose-invert prose-lg max-w-none prose-headings:font-outfit prose-headings:font-bold prose-headings:text-white prose-a:text-accent-red hover:prose-a:text-glow-red prose-img:rounded-3xl prose-img:shadow-2xl prose-pre:bg-dark-card prose-pre:border prose-pre:border-white/10">
+        <Content />
+      </article>
+      
+      {blog.data.tags && blog.data.tags.length > 0 && (
+         <div class="mt-16 pt-8 border-t border-white/10">
+           <h3 class="text-sm font-bold text-white uppercase tracking-widest mb-6">Tags</h3>
+           <div class="flex flex-wrap gap-2">
+             {blog.data.tags.map((tag) => (
+                <span class="glass-card text-slate-300 px-4 py-2 rounded-xl text-sm font-medium border border-white/10 hover:border-accent-red/50 hover:text-white transition-colors cursor-default">{tag}</span>
+             ))}
+           </div>
+         </div>
+      )}
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,87 @@
+---
+const projects = [
+  {
+    title: "Java Kirana ERP",
+    category: "Web Mobile App · 2024 - 2025",
+    description: "A comprehensive coffee processing application that manages the entire workflow, from purchase orders to processing operations and sales. The system supports multiple processing methods, including full wash (wet hull), full wash (dry hull), natural, semi-wash, and more.",
+    img: "/assets/img/java-kirana.png",
+  },
+  {
+    title: "Breakdiving",
+    category: "Web Mobile App · 2025",
+    description: "A social media based application designed to connect multiple communities where members can support, collaborate, and grow together. The platform fosters meaningful interactions and serves as a strong support system for its users.",
+    img: "/assets/img/breakdiving.png",
+  },
+  {
+    title: "Maple",
+    category: "Social Media · 2023 - 2024",
+    description: "A niche social media style application built specifically to connect homeowners, designers, and contractors. The platform allows each role to share designs, showcase projects, and curate collections of furniture and related items.",
+    img: "/assets/img/maple.png",
+  },
+  {
+    title: "Car Code Racing",
+    category: "Games · 2023",
+    description: "A multiplayer racing game application where users use their smartphones as controllers while the gameplay is displayed on a laptop or main screen. Each race includes various obstacles, and players must answer questions correctly to refill their fuel and continue competing.",
+    img: "/assets/img/car-code.jpg",
+  },
+  {
+    title: "Shejek",
+    category: "Mobile App · 2022",
+    description: "A ride-hailing application similar to Gojek or Grab, specifically designed for women. The platform connects female drivers with female passengers, creating a safer and more comfortable transportation experience tailored for women.",
+    img: "/assets/img/shejek.png",
+  }
+];
+---
+
+<div class="px-6 md:px-12 lg:px-24 py-24 bg-dark-bg relative border-t border-white/5 overflow-hidden">
+  <div class="max-w-[1920px] mx-auto hidden lg:block absolute left-0 bottom-0 w-1/3 h-1/2 bg-[radial-gradient(ellipse_at_left,_var(--color-dark-card)_0%,_transparent_70%)] opacity-30 z-0 pointer-events-none"></div>
+
+  <div class="max-w-[1920px] mx-auto w-full relative z-10">
+    <div class="flex flex-col gap-12 lg:gap-16">
+      
+      <!-- Header Column -->
+      <div class="w-full text-center flex flex-col items-center animate-[fade-in-up_1s_ease-out]">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-[2px] w-12 bg-accent-red shadow-[0_0_8px_rgba(225,29,72,0.8)]"></div>
+          <span class="text-accent-red font-medium tracking-widest uppercase text-sm">Portfolio</span>
+          <div class="h-[2px] w-12 bg-accent-red shadow-[0_0_8px_rgba(225,29,72,0.8)]"></div>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-outfit font-bold text-white mb-6 tracking-tight leading-tight">
+          Peek Into My <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-red to-glow-red">Recent Projects</span>
+        </h2>
+        <p class="text-slate-400 leading-relaxed text-lg mb-8 max-w-2xl mx-auto">
+          I've been busy building some cool stuff on the web, from snappy frontends to solid backends.
+          If you're into clean code, smooth user experiences, and apps that just work, take a look at what I've been cooking up lately!
+        </p>
+      </div>
+
+      <!-- Projects Grid Layout -->
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-[fade-in-up_1s_ease-out_0.3s_both]">
+        {projects.map((project, index) => (
+          <div class={`glass-card rounded-3xl overflow-hidden flex flex-col group hover:-translate-y-2 hover:border-accent-red/40 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] ${index === 0 ? 'md:col-span-2 md:flex-row' : ''}`}>
+            
+            <div class={`bg-white/5 p-8 flex items-center justify-center relative overflow-hidden ${index === 0 ? 'md:w-1/2' : 'aspect-video'}`}>
+              <div class="absolute inset-0 bg-gradient-to-tr from-accent-red/5 to-transparent z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <img src={project.img} alt={project.title} class="max-w-[70%] max-h-[70%] object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-700 ease-out relative z-10" />
+            </div>
+
+            <div class={`p-8 flex flex-col justify-center ${index === 0 ? 'md:w-1/2' : 'flex-1'}`}>
+              <span class="text-xs tracking-widest uppercase text-accent-red font-semibold mb-3 bg-accent-red/10 border border-accent-red/20 px-3 py-1 rounded-full w-fit shadow-[0_0_10px_rgba(225,29,72,0.1)]">
+                {project.category.split(' · ')[0]}
+              </span>
+              <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-accent-red transition-colors">{project.title}</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                {project.description}
+              </p>
+              <div class="mt-auto">
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">{project.category.split(' · ')[1] || 'Project'}</span>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</div>

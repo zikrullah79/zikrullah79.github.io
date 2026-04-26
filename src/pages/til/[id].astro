@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const allTil = await getCollection('til');
+  return allTil.map((til) => ({
+    params: { id: til.id },
+    props: { til },
+  }));
+}
+
+const { til } = Astro.props;
+const { Content } = await render(til);
+---
+
+<Layout title={`TIL: ${til.data.title} - Zikrullah`} hideFooter={true}>
+  <div class="bg-dark-bg min-h-screen py-32 px-6 md:px-12 lg:px-24 border-t border-white/5 relative">
+    
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <div class="max-w-3xl mx-auto relative z-10">
+      <a href="/blogs" class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-10 font-medium group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Learning Log
+      </a>
+      
+      <header class="mb-10 pb-10 border-b border-white/10">
+        <div class="flex flex-wrap items-center gap-4 mb-6">
+          <span class="bg-accent-red/10 border border-accent-red/20 text-accent-red px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(225,29,72,0.1)]">TIL</span>
+          <span class="text-slate-400 text-sm font-medium flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            {new Date(til.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-outfit font-bold text-white leading-tight tracking-tight">{til.data.title}</h1>
+      </header>
+
+      <article class="prose prose-invert prose-lg max-w-none prose-headings:font-outfit prose-headings:font-bold prose-headings:text-white prose-a:text-accent-red hover:prose-a:text-glow-red glass-card p-8 md:p-12 rounded-[2rem] border border-white/10">
+        <Content />
+      </article>
+      
+      {til.data.tags && til.data.tags.length > 0 && (
+         <div class="mt-12 flex flex-wrap gap-2">
+           {til.data.tags.map((tag) => (
+              <span class="bg-dark-card border border-white/10 text-slate-300 px-4 py-2 rounded-xl text-sm font-medium shadow-sm hover:border-white/20 transition-colors cursor-default">{tag}</span>
+           ))}
+         </div>
+      )}
+    </div>
+  </div>
+</Layout>
